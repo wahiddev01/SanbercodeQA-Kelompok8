@@ -1,1 +1,0 @@
-# SanbercodeQA-Kelompok8
