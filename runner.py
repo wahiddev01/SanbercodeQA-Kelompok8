@@ -3,7 +3,9 @@ from unittest.suite import TestSuite
 
 import sys
 sys.path.append('MainTest/LoginLogout')
+sys.path.append('MainTest/AdminUserManagementUsers')
 from MainTest.LoginLogout import login
+from MainTest.AdminUserManagementUsers import users
 
 
 if __name__ == '__main__':
@@ -13,9 +15,8 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
 
     # add test to the test suite
-    # suite.addTests(loader.loadTestsFromModule(First_Test))
-    # suite.addTests(loader.loadTestsFromModule(cart))
-    suite.addTests(loader.loadTestsFromModule(login))
+    suite.addTests(loader.loadTestsFromModule(users))
+    # suite.addTests(loader.loadTestsFromModule(login))
 
     # initialize a runner, pass it your suite and run it
     runner = unittest.TextTestRunner(verbosity=1)
