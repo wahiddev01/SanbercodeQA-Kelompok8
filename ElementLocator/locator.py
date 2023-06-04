@@ -29,6 +29,15 @@ class elem():
     userDeleteConfirmationYesButton = '.oxd-button--label-danger'
     userDeleteConfirmationTitle = '.orangehrm-modal-header > .oxd-text'
     userDeleteConfirmationNoButton = '.oxd-button--text'
+    pimBtn = "/html[1]/body[1]/div[1]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[2]/a[1]"
+    pimModule = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/h5[1]"
+    fieldEmployee = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]"
+    btnSearch = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[2]/button[2]"
+    checkboxSearch = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]/i[1]"
+    btnDeleteSection = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]"
+    btnModalDeleteSection = "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[3]/button[2]"
+    pimDeleteToast = "oxd-toaster_1"
+
 
     userDeleteToast = '.oxd-text--toast-message'
 
