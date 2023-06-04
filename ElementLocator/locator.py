@@ -1,9 +1,7 @@
 class elem():
-    # username = ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input"
     username = "input[name='username']"
     password = "input[name='password']"
     loginButton = "orangehrm-login-button"
-    # errorMessage = ':nth-child(2) > .oxd-input-group > .oxd-text'
     errorMessage = ".oxd-text.oxd-text--span.oxd-input-field-error-message.oxd-input-group__message"
     profilAvatar = '.oxd-userdropdown-tab'
     logoutButton = ':nth-child(4) > .oxd-userdropdown-link'
@@ -17,7 +15,7 @@ class elem():
     userManagementButton = '.--visited > .oxd-topbar-body-nav-tab-item'
     usersTableBody = '.oxd-table-body'
     usersCellEditButton = ':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2) > .oxd-icon'
-    usersCellDeleteButton = ':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1)'
+    usersCellDeleteButton = ':nth-child(2) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1)'
     addUserTitle = '.orangehrm-card-container > .oxd-text--h6'
     userRoleDropdown = ':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
     statusDropdown = ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
@@ -27,8 +25,10 @@ class elem():
     confirmPasswordInput = ':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
     usersSaveBtn = '.oxd-button--secondary'
     usersCancelBtn = '.oxd-button--ghost'
+    editUserPageTitle = '.orangehrm-card-container > .oxd-text--h6'
+    userDeleteConfirmationYesButton = '.oxd-button--label-danger'
+    userDeleteConfirmationTitle = '.orangehrm-modal-header > .oxd-text'
+    userDeleteConfirmationNoButton = '.oxd-button--text'
 
-    # addCartBackpack = "[data-test='add-to-cart-sauce-labs-backpack']"
-    # addcartBikeLight = "/html//button[@id='add-to-cart-sauce-labs-bike-light']"
-    # cart = "shopping_cart_link"
+    userDeleteToast = '.oxd-text--toast-message'
 

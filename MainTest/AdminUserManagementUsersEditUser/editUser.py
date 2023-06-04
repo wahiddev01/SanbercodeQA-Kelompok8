@@ -17,7 +17,7 @@ class TestUsers(unittest.TestCase): # test scenario
     def setUp(self):
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
 
-    def test_add_user_page(self):
+    def test_edit_user_page(self):
         driver = self.browser
         driver.get(inputan.baseUrl)
         driver.implicitly_wait(10)
@@ -26,10 +26,10 @@ class TestUsers(unittest.TestCase): # test scenario
         driver.find_element(By.CLASS_NAME, elem.loginButton).click()
 
         driver.find_element(By.CSS_SELECTOR, elem.adminButton).click()
-        driver.find_element(By.CSS_SELECTOR, elem.addUserButton).click()
-        add_user_label = driver.find_element(By.CSS_SELECTOR, elem.addUserTitle)
+        driver.find_element(By.CSS_SELECTOR, elem.usersCellEditButton).click()
+        edit_user_page_title = driver.find_element(By.CSS_SELECTOR, elem.editUserPageTitle)
 
-        self.assertTrue(add_user_label.is_displayed())
+        self.assertTrue(edit_user_page_title.is_displayed())
 
 if __name__ == '__main__':
     unittest.main()
