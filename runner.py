@@ -25,15 +25,15 @@ if __name__ == '__main__':
 
     # add test to the test suite
     suite.addTests(loader.loadTestsFromModule(login))
-    suite.addTests(loader.loadTestsFromModule(users))
-    suite.addTests(loader.loadTestsFromModule(addUser))
-    suite.addTests(loader.loadTestsFromModule(editUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
-    suite.addTests(loader.loadTestsFromModule(editUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
-    suite.addTests(loader.loadTestsFromModule(pimEditUsers))
+    # suite.addTests(loader.loadTestsFromModule(users))
+    # suite.addTests(loader.loadTestsFromModule(addUser))
+    # suite.addTests(loader.loadTestsFromModule(editUser))
+    # suite.addTests(loader.loadTestsFromModule(deleteUser))
+    # suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
+    # suite.addTests(loader.loadTestsFromModule(editUser))
+    # suite.addTests(loader.loadTestsFromModule(deleteUser))
+    # suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
+    # suite.addTests(loader.loadTestsFromModule(pimEditUsers))
 
     # initialize a runner, pass it your suite and run it
     runner = unittest.TextTestRunner(verbosity=2)

@@ -16,7 +16,7 @@ class elem():
     userManagementButton = '.--visited > .oxd-topbar-body-nav-tab-item'
     usersTableBody = '.oxd-table-body'
     usersCellEditButton = ':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2) > .oxd-icon'
-    usersCellDeleteButton = ':nth-child(2) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2)'
+    usersCellDeleteButton = ':nth-child(2) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1) > .oxd-icon'
     addUserTitle = '.orangehrm-card-container > .oxd-text--h6'
     userRoleDropdown = ':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
     statusDropdown = ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
@@ -72,6 +72,9 @@ class elem():
 
     # edit user
     editUsernameInput = ':nth-child(2) > .oxd-input'
+
     editUserToastMessage = '.oxd-text--toast-message'
-    editSaveButton = '.oxd-button--secondary'
+    editSaveButton = '/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[2]/button[2]'
+
+    requiredNote = '.oxd-form-actions > .oxd-text'
 
