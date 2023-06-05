@@ -31,5 +31,30 @@ class TestUsers(unittest.TestCase): # test scenario
 
         self.assertTrue(add_user_label.is_displayed())
 
+    def test_add_user_functionality(self):
+        driver = self.browser
+        driver.get(inputan.baseUrl)
+        driver.implicitly_wait(10)
+        driver.find_element(By.CSS_SELECTOR, elem.username).send_keys(inputan.validUser)
+        driver.find_element(By.CSS_SELECTOR, elem.password).send_keys(inputan.validPass)
+        driver.find_element(By.CLASS_NAME, elem.loginButton).click()
+
+        driver.find_element(By.CSS_SELECTOR, elem.adminButton).click()
+        driver.find_element(By.CSS_SELECTOR, elem.addUserButton).click()
+
+        driver.find_element(By.CSS_SELECTOR, elem.userRoleDropdown).click()
+        driver.find_element(By.CSS_SELECTOR, elem.roleEssOption).click()
+        driver.find_element(By.CSS_SELECTOR, elem.statusDropdown).click()
+        driver.find_element(By.CSS_SELECTOR, elem.statusEnabledOption).click()
+        driver.find_element(By.CSS_SELECTOR, elem.employeeNameInput).send_keys('s')
+        driver.find_element(By.CSS_SELECTOR, elem.employeeNameOption).click()
+        driver.find_element(By.CSS_SELECTOR, elem.usernameInput).send_keys(inputan.username)
+        driver.find_element(By.CSS_SELECTOR, elem.passwordInput).send_keys(inputan.password)
+        driver.find_element(By.CSS_SELECTOR, elem.confirmPasswordInput).send_keys(inputan.password)
+        driver.find_element(By.CSS_SELECTOR, elem.addUserSaveButton).click()
+        toast = driver.find_element(By.CSS_SELECTOR, elem.addUserToastMessage)
+
+        self.assertTrue(toast)
+
 if __name__ == '__main__':
     unittest.main()

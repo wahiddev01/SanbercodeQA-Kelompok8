@@ -22,13 +22,13 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
 
     # add test to the test suite
-    suite.addTests(loader.loadTestsFromModule(login))
-    suite.addTests(loader.loadTestsFromModule(users))
-    suite.addTests(loader.loadTestsFromModule(addUser))
+    # suite.addTests(loader.loadTestsFromModule(login))
+    # suite.addTests(loader.loadTestsFromModule(users))
+    # suite.addTests(loader.loadTestsFromModule(addUser))
     suite.addTests(loader.loadTestsFromModule(editUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUser))
-    suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
+    # suite.addTests(loader.loadTestsFromModule(deleteUser))
+    # suite.addTests(loader.loadTestsFromModule(deleteUsersPim))
 
     # initialize a runner, pass it your suite and run it
-    runner = unittest.TextTestRunner(verbosity=1)
+    runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)

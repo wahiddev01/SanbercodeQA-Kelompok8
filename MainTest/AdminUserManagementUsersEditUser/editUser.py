@@ -31,5 +31,22 @@ class TestUsers(unittest.TestCase): # test scenario
 
         self.assertTrue(edit_user_page_title.is_displayed())
 
+    def test_edit_user_functionality(self):
+        driver = self.browser
+        driver.get(inputan.baseUrl)
+        driver.implicitly_wait(10)
+        driver.find_element(By.CSS_SELECTOR, elem.username).send_keys(inputan.validUser)
+        driver.find_element(By.CSS_SELECTOR, elem.password).send_keys(inputan.validPass)
+        driver.find_element(By.CLASS_NAME, elem.loginButton).click()
+
+        driver.find_element(By.CSS_SELECTOR, elem.adminButton).click()
+        driver.find_element(By.CSS_SELECTOR, elem.usersCellEditButton).click()
+        driver.find_element(By.CSS_SELECTOR, elem.editUsernameInput).send_keys(inputan.editUsername)
+        driver.find_element(By.CSS_SELECTOR, elem.editSaveButton).click()
+
+        toast = driver.find_element(By.CSS_SELECTOR, elem.editUserToastMessage)
+
+        self.assertTrue(toast.is_displayed())
+
 if __name__ == '__main__':
     unittest.main()
