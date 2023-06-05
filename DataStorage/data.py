@@ -5,6 +5,6 @@ class inputan():
     validPass = "admin123"
     invalidPass = "wrongpassword"
     reqPass = "Required"
-    username = "testusername3"
+    username = "testusername6"
     password = 'qwer1234!'
-    editUsername = 'editusername1'
+    editUsername = 'editusername7'
