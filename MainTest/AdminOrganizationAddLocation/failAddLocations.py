@@ -40,7 +40,7 @@ class TestFailAddLocations(unittest.TestCase):
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhfax))).send_keys("0109876")
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhaddress))).send_keys("Kemenangan")
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhnote))).send_keys("New Add")
-         driver.find_element(By.XPATH, E.element.btnsave).click()
+         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.btnsave))).click()
          errorMessage = driver.find_element(By.XPATH, E.element.requiredField).get_attribute("innerHTML")
          self.assertIn("Required", errorMessage)
 
@@ -67,6 +67,7 @@ class TestFailAddLocations(unittest.TestCase):
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhfax))).send_keys("0109876")
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhaddress))).send_keys("Kemenangan")
          WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.mhnote))).send_keys("New Add")
+         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, E.element.btnsave))).click()
          errorMessage = driver.find_element(By.XPATH, E.element.requiredField).get_attribute("innerHTML")
          self.assertIn("Required", errorMessage)
 
