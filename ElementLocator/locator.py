@@ -11,11 +11,12 @@ class elem():
     forgotPasswordButton = '.orangehrm-login-forgot > .oxd-text'
     adminButton = ':nth-child(1) > .oxd-main-menu-item'
     addUserButton = '.orangehrm-header-container > .oxd-button'
+
     recordsFoundText = '.orangehrm-horizontal-padding'
     userManagementButton = '.--visited > .oxd-topbar-body-nav-tab-item'
     usersTableBody = '.oxd-table-body'
     usersCellEditButton = ':nth-child(1) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2) > .oxd-icon'
-    usersCellDeleteButton = ':nth-child(2) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(1)'
+    usersCellDeleteButton = ':nth-child(2) > .oxd-table-row > :nth-child(6) > .oxd-table-cell-actions > :nth-child(2)'
     addUserTitle = '.orangehrm-card-container > .oxd-text--h6'
     userRoleDropdown = ':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
     statusDropdown = ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after > .oxd-icon'
@@ -40,4 +41,23 @@ class elem():
 
 
     userDeleteToast = '.oxd-text--toast-message'
+
+    # Add user form
+    roleEssOption = '.oxd-select-dropdown > :nth-child(3) > span'
+    statusEnabledOption = '.oxd-select-dropdown > :nth-child(2) > span'
+
+
+    employeeNameInput = '.oxd-autocomplete-text-input > input'
+    usernameInput = ':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input'
+    passwordInput = '.user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input'
+    confirmPasswordInput = ':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
+    addUserSaveButton = '.oxd-button--secondary'
+    addUserCancelButton = '.oxd-button--secondary'
+    employeeNameOption = '.oxd-autocomplete-dropdown > :nth-child(4)'
+    addUserToastMessage = '.oxd-text--toast-message'
+
+    # edit user
+    editUsernameInput = ':nth-child(2) > .oxd-input'
+    editUserToastMessage = '.oxd-text--toast-message'
+    editSaveButton = '.oxd-button--secondary'
 
